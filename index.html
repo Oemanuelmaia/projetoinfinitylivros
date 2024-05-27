@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Projeto - Livros</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+   <form id="form" >
+
+    <label for="Title">Book Title: </label>
+    <input type="text" id="title" name="Title">
+    <br>
+
+    <label for="Author">Book Author: </label>
+    <input type="text" id="author" name="Author">
+    <br>
+
+    <label for="Gender">Book Gender: </label>
+    <input type="text" id="gender" name="Gender">
+    <br>
+
+    <label for="Publication Year">Year of publication</label>
+    <input type="number" id="year" name="Publication Year">
+    <br>
+
+    <label for="Rating">Rating</label>
+    <input type="number" id="rating" name="Rating" min = "1" max = "5">
+    <br>
+
+    <button> Send </button>
+
+   </form>
+
+   <input type="text" id="search" placeholder="Search for by title, author or gender">
+   <button id="searchBtn">Search</button>
+
+   <div id="results"></div>
+
+   <label for="sortCriteria"> Sort by: </label>
+    <select name="sort" id="sortCriteria">
+
+    <option value="Title">Title</option>
+    <option value="Author">Author</option>
+    <option value="Year">Year</option>
+
+    </select>
+
+    <button id="sortBtn">Sort</button>
+
+    <div id="results"></div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
